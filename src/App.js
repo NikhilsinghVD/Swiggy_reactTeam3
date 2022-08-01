@@ -7,6 +7,7 @@ import Receipt from './Pages/Receipt';
 import Setting from './Pages/Setting';
 import Delivery from './Pages/Delivery';
 import CustomerSupport from './Pages/CustomerSupport';
+import CartModule from './Components/NavBar/CartModule';
 
 function App() {
  
@@ -20,6 +21,7 @@ function App() {
       <Route path="/settings" element={<Setting/>}/>
       <Route path="/delivery" element={<Delivery/>}/>
       <Route path="/CustomerSupport" element={<CustomerSupport/>}/>
+      <Route path="/cartModule" element={<CartModule/>}/>
      </Routes>
     </>
   );

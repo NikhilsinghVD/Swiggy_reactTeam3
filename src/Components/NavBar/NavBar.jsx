@@ -267,7 +267,7 @@ function NavBar() {
               color="inherit"
             >
               <Badge badgeContent={17} color="error">
-                <ShoppingCartIcon />
+           <ShoppingCartIcon />
               </Badge>
             </IconButton>
             <IconButton
