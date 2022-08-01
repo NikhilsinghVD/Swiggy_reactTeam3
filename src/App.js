@@ -2,6 +2,11 @@ import React from 'react';
 import { Route, Routes} from 'react-router-dom';
 import Home from './Pages/Home';
 import NavBar from './Components/NavBar/NavBar';
+import MyWallet from './Pages/MyWallet';
+import Receipt from './Pages/Receipt';
+import Setting from './Pages/Setting';
+import Delivery from './Pages/Delivery';
+import CustomerSupport from './Pages/CustomerSupport';
 
 function App() {
  
@@ -10,6 +15,11 @@ function App() {
     <NavBar/>
      <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/mywallet" element={<MyWallet/>}/>
+      <Route path="/receipt" element={<Receipt/>}/>
+      <Route path="/settings" element={<Setting/>}/>
+      <Route path="/delivery" element={<Delivery/>}/>
+      <Route path="/CustomerSupport" element={<CustomerSupport/>}/>
      </Routes>
     </>
   );

@@ -31,8 +31,10 @@ import ReceiptIcon from '@mui/icons-material/Receipt';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import CartModule from './CartModule';
-
-
+import LogOutModule from './LogOutModule';
+import LoginModule from './LoginModule';
+import RegisterModule from './RegisterModule';
+import {Link} from 'react-router-dom';
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -116,9 +118,9 @@ function NavBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>LogIn</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Register</MenuItem>
-      <MenuItem onClick={handleMenuClose}>SignOut</MenuItem>
+      <MenuItem onClick={handleMenuClose}><RegisterModule/></MenuItem>
+      <MenuItem onClick={handleMenuClose}><LoginModule/></MenuItem>
+      <MenuItem onClick={handleMenuClose}><LogOutModule/></MenuItem>
     </Menu>
   );
 
@@ -182,7 +184,7 @@ function NavBar() {
               <ListItemIcon>
                  <AccountBalanceWalletIcon />
               </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}>My Wallet</ListItemText>           
+              <ListItemText onClick={()=>setOpens(false)}><Link to='/mywallet'>My Wallet</Link></ListItemText>           
             </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
@@ -190,7 +192,7 @@ function NavBar() {
               <ListItemIcon>
                  <DeliveryDiningIcon />
               </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}>Delivery</ListItemText>           
+              <ListItemText onClick={()=>setOpens(false)}><Link to='/delivery'>Delivery</Link></ListItemText>           
             </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
@@ -198,7 +200,7 @@ function NavBar() {
               <ListItemIcon>
                  <ReceiptIcon />
               </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}>Reciept</ListItemText>           
+              <ListItemText onClick={()=>setOpens(false)}><Link to='/receipt'>Reciept</Link></ListItemText>           
             </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
@@ -206,7 +208,7 @@ function NavBar() {
               <ListItemIcon>
                  <SupportAgentIcon />
               </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}>Customer Support</ListItemText>           
+              <ListItemText onClick={()=>setOpens(false)}><Link to='/CustomerSupport'>Customer Support</Link></ListItemText>           
             </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
@@ -214,7 +216,7 @@ function NavBar() {
               <ListItemIcon>
                  <SettingsIcon />
               </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}>Setting</ListItemText>           
+              <ListItemText onClick={()=>setOpens(false)}><Link to='/settings'>Setting</Link></ListItemText>           
             </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
@@ -222,7 +224,7 @@ function NavBar() {
               <ListItemIcon>
                  <ExitToAppIcon />
               </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}>Sign Out</ListItemText>           
+              <ListItemText onClick={()=>setOpens(false)}><Link to='/'>Sign Out</Link></ListItemText>           
             </ListItemButton>
           </ListItem>
       </List>
@@ -246,7 +248,7 @@ function NavBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Food App
+            <Link to='/'>Food App</Link>
           </Typography>
           <Search>
             <SearchIconWrapper>
