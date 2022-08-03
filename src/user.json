@@ -1,0 +1,39 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "JohnSmith",
+            "email": "johnsmith@gmail.com",
+            "password": "12345",
+            "address": ""
+        },
+        {
+            "id": 2,
+            "name": "Shalini",
+            "email": "shalini@gmail.com",
+            "password": "67890",
+            "address": ""
+        },
+        {
+            "id": 3,
+            "name": "Gomathi",
+            "email": "gomathi@gmail.com",
+            "password": "356789",
+            "address": ""
+        },
+        {
+            "id": 4,
+            "name": "Latha",
+            "email": "latha@gmail.com",
+            "password": "876533",
+            "address": ""
+        },
+        {
+            "id":5,
+            "name": "Sujin",
+            "email": "sujin@gmail.com",
+            "password": "687878",
+            "address": ""
+        }
+    ]
+}

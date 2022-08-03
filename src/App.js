@@ -8,6 +8,7 @@ import Setting from './Pages/Setting';
 import Delivery from './Pages/Delivery';
 import CustomerSupport from './Pages/CustomerSupport';
 import CartModule from './Components/NavBar/CartModule';
+import Product from './Pages/Product';
 
 function App() {
  
@@ -22,6 +23,7 @@ function App() {
       <Route path="/delivery" element={<Delivery/>}/>
       <Route path="/CustomerSupport" element={<CustomerSupport/>}/>
       <Route path="/cartModule" element={<CartModule/>}/>
+      <Route path="/product" element={<Product/>}/>
      </Routes>
     </>
   );
