@@ -1,0 +1,438 @@
+{
+    "reatuarentList": [
+        {
+            "id": 1,
+            "resTitle": "A2B veg",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/puci5j1isadzx532bco3",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Mini Tiffen",
+                    "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFTom1LtWBjI_ocDQPujzmLtPhRwk3eSoKtDmgjE26jRVy13D7csNuZCyuqgozuwuMyGi8Ug00EUSQj4yLd1cR9r5zyikRtFC2UaCtkCIUBZyenmBfMNWVAKM6Pk4gRrKLlQjam9hqiYQ4N8swd0C52r5_DeNXcNJ8X9iIYAZw6I2_rrI-DFKJ8HM5/w400-h325/1-MINI-TIFFIN.png",
+                    "price": "160"
+                },
+                {
+                    "title": "Ghee Dosa",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/1.jpg",
+                    "price": "140"
+                },
+                {
+                    "title": "Poori Masala",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/2.jpg",
+                    "price": "95"
+                },
+                {
+                    "title": "Paneer Tandoori",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/4.jpg",
+                    "price": "170"
+                },
+                {
+                    "title": "Veg Fried Rice",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/3.jpg",
+                    "price": "130"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "resTitle": "Sri Balajee Bavan",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://b.zmtcdn.com/data/pictures/5/19272405/983953c8b556a31fc306bd3d4edcd649_featured_v2.jpg?output-format=webp",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Roti",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/af3/2d150ebab4c2e6747de36af12af44af3.jpg?output-format=webp",
+                    "price": "60"
+                },
+                {
+                    "title": "chicken Tandoori",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/57a/7b65a8dcb198e4cd3dbad0a3bcc8a57a.jpg?output-format=webp",
+                    "price": "140"
+                },
+                {
+                    "title": "Poori Masala",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/2.jpg",
+                    "price": "95"
+                },
+                {
+                    "title": "shawarma",
+                    "img": "https://b.zmtcdn.com/data/pictures/9/20251039/144fc8254779fbb0df44c72c8dc1075b_o2_featured_v2.jpg",
+                    "price": "120"
+                },
+                {
+                    "title": "Veg Fried Rice",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/3.jpg",
+                    "price": "140"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "resTitle": "Burger King",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://b.zmtcdn.com/data/dish_photos/05e/a40b6af2702c9ed84028fe08237f105e.jpg?output-format=webp",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Tandoori Chicken Sandwich",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/dfe/32efcae935bed7eefcef1507a8ea3dfe.jpg?fit=around|130:130&crop=130:130;*,*",
+                    "price": "199"
+                },
+                {
+                    "title": "Garlic Bread",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/99a/0ff31a04367e075de08fb16af34f099a.jpg?fit=around|130:130&crop=130:130;*,*",
+                    "price": "129"
+                },
+                {
+                    "title": "Cold Dark Frappe",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/1e1/49a01f2f895d82d9d2b2327aa30a71e1.jpg?fit=around|130:130&crop=130:130;*,*",
+                    "price": "200"
+                },
+                {
+                    "title": "double Decker Sandwich",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/d5a/f88d1404274d4bc64b7ba8d176226d5a.jpg?fit=around|130:130&crop=130:130;*,*",
+                    "price": "219"
+                },
+                {
+                    "title": "Veg Fried Rice",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/3.jpg",
+                    "price": "130"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "resTitle": "Cheesy Delights",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://b.zmtcdn.com/data/dish_photos/19d/85e511d6edaec37d09079453491d619d.png",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Double Cheese Chicken Burger",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/dc8/5727824efb1b1e5c1c03cf5ecd164dc8.png?fit=around|130:130&crop=130:130;*,*",
+                    "price": "195"
+                },
+                {
+                    "title": "Rich Strawberry Shake",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/cbd/c067fa164be66605aa12a039a7a85cbd.png?fit=around|130:130&crop=130:130;*,*",
+                    "price": "140"
+                },
+                {
+                    "title": "Chiicken Popcorn",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/7a5/7077b13c354160fe7992877f5dc497a5.png?fit=around|130:130&crop=130:130;*,*",
+                    "price": "157"
+                },
+                {
+                    "title": "Tandoori",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/4.jpg",
+                    "price": "170"
+                },
+                {
+                    "title": "Chiicken Cheese Burger",
+                    "img": "https://b.zmtcdn.com/data/dish_photos/6c0/0fa308e4676e58c327ff8b7e697956c0.jpg?fit=around|130:130&crop=130:130;*,*",
+                    "price": "180"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "resTitle": "Sree Akshayam",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dkds8g7ak8rneieejko6",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Sambar Vadai",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xqac4auhclohtngmeydh",
+                    "price": "70"
+                },
+                {
+                    "title": "Curd Vadai",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/bc5cz3uphrbjfbgtayt1",
+                    "price": "75"
+                },
+                {
+                    "title": "Poori Masala",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/2.jpg",
+                    "price": "90"
+                },
+                {
+                    "title": "Idly",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/u5e6ne1v8eu61wykyzw5",
+                    "price": "40"
+                },
+                {
+                    "title": "Mango Juice",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kldha5osgqy3nii3xauk",
+                    "price": "80"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "resTitle": "Cake Works",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/cmwqxtqo6zjkdfjxcjr0",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "White Forest Cake",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ccuqfybcyf38rogpp7lq",
+                    "price": "270"
+                },
+                {
+                    "title": "Black Forest Cake",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kzwkxcicpyjzaeap1q6k",
+                    "price": "290"
+                },
+                {
+                    "title": "Butterscotch Cake",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yai9wuay8i0edo3qviln",
+                    "price": "300"
+                },
+                {
+                    "title": "Choco Chip Truffle Cake",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/p4oc54cydn7e2t0fash1",
+                    "price": "290"
+                },
+                {
+                    "title": "Chocolatec Almond Cake",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/inuxqynmrhmeul1d2npr",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "resTitle": "Eating Circles",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dlmz1yxadswphbdd8vcu",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/eqcbk0o45hksexqssaek",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/s2pzw7si28tmqukpscar",
+                    "price": "220"
+                },
+                {
+                    "title": "Chicken Lollipop",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/j01cuy4ckeccp8bcsxpg",
+                    "price": "104"
+                },
+                {
+                    "title": "Tandoori",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/4.jpg",
+                    "price": "170"
+                },
+                {
+                    "title": "Chicken 65",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vuorwsq537avpzgldqri",
+                    "price": "260"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        }
+
+
+
+
+
+
+    ]
+}
+    
