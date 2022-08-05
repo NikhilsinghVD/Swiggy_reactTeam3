@@ -37,11 +37,9 @@ import Kethanproduct from './Pages/Kethanproduct';
 
 
 
-import React from 'react'
 import Header from './jayapal/component/Header'
 import CardsDetails from './jayapal/component/CardsDetails';
 import Cards from './jayapal/component/Cards';
-import {Routes,Route} from "react-router-dom";
 
 const App=()=> {
   return (
