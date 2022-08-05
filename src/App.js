@@ -11,8 +11,39 @@ import CartModule from './Components/NavBar/CartModule';
 import Product from './Pages/Product';
 import Kethanproduct from './Pages/Kethanproduct';
 
-function App() {
+// function App() {
  
+//   return (
+//     <>
+//     <NavBar/>
+//      <Routes>
+//       <Route path="/" element={<Home/>}/>
+//       <Route path="/mywallet" element={<MyWallet/>}/>
+//       <Route path="/receipt" element={<Receipt/>}/>
+//       <Route path="/settings" element={<Setting/>}/>
+//       <Route path="/delivery" element={<Delivery/>}/>
+//       <Route path="/CustomerSupport" element={<CustomerSupport/>}/>
+//       <Route path="/cartModule" element={<CartModule/>}/>
+//       <Route path="/product" element={<Product/>}/>
+//      </Routes>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+// -------------------------------------------
+
+
+
+import React from 'react'
+import Header from './jayapal/component/Header'
+import CardsDetails from './jayapal/component/CardsDetails';
+import Cards from './jayapal/component/Cards';
+import {Routes,Route} from "react-router-dom";
+
+const App=()=> {
   return (
     <>
     <NavBar/>
