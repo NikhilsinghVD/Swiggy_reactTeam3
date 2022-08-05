@@ -34,6 +34,40 @@
             "email": "sujin@gmail.com",
             "password": "687878",
             "address": ""
+        },
+        {
+            "id": 6,
+            "name": "Srikanth",
+            "email": "Srikanth@gmail.com",
+            "password": "7650876",
+            "address": ""
+        },
+        {
+            "id": 7,
+            "name": "shirish",
+            "email": "shirish@gmail.com",
+            "password": "076521",
+            "address": ""
+        },
+        {
+            "id": 8,
+            "name": "santhosh",
+            "email": "santhosh@gmail.com",
+            "password": "9687565",
+            "address": ""
+        },
+        {
+            "id": 9,
+            "name": "prabhakar",
+            "email": "prabhakar@gmail.com",
+            "password": "54129876",
+            "address": ""
+        },{
+            "id": 10,
+            "name": "kiran",
+            "email": "kiran@gmail.com",
+            "password": "9687565",
+            "address": ""
         }
     ]
 }

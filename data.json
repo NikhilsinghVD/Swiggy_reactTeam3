@@ -1,5 +1,5 @@
 {
-    "reatuarentList": [
+    "restuarantsList": [
         {
             "id": 1,
             "resTitle": "A2B veg",
@@ -426,7 +426,435 @@
                     "review": "Best Place for food"
                 }
             ]
+        },
+        {
+            "id": 8,
+            "resTitle": "Cibo Matto",
+            "info": "Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food",
+            "resImg": "https://3.bp.blogspot.com/-h7bjW6cHEnI/T56-7Inq3kI/AAAAAAAAEgA/1Zo2dAEvWN4/s1600/Wit_572_ZD0067.jpg",
+            "city": "banglore",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+                    "price": "300"
+                },
+                {
+                    "title": "pepper chicken",
+                    "img": "https://i.ytimg.com/vi/bqYkvC_SM6A/maxresdefault.jpg",
+                    "price": "250"
+                },
+                {
+                    "title": "Tandoori chicken",
+                    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
+                    "price": "280"
+                },
+                {
+                    "title": "Crispy prawns curry",
+                    "img": "https://c.ndtvimg.com/2020-01/131ns4qo_prawn_625x300_22_January_20.jpg",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "naveen",
+                    "email": "naveen@gmail.com",
+                    "review": "Awesome "
+                },
+                {
+                    "name": "kishore",
+                    "email": "kishore@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "adithya",
+                    "email": "adithya@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "srujan",
+                    "email": "srujan@gmail.com",
+                    "review": "good Food"
+                },
+                {
+                    "name": "srujith",
+                    "email": "srujith@gmail.com",
+                    "review": "Best Place for biryani"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "resTitle": "Light house restaurant",
+            "info": "Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food",
+            "resImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLrwgNjxkpTpqBeC8lpBRHLDJJLemK3Hf31A&usqp=CAU",
+            "city": "banglore",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+                    "price": "300"
+                },
+                {
+                    "title": "pepper chicken",
+                    "img": "https://i.ytimg.com/vi/bqYkvC_SM6A/maxresdefault.jpg",
+                    "price": "250"
+                },
+                {
+                    "title": "Tandoori chicken",
+                    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
+                    "price": "280"
+                },
+                {
+                    "title": "Crispy prawns curry",
+                    "img": "https://c.ndtvimg.com/2020-01/131ns4qo_prawn_625x300_22_January_20.jpg",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "naveen",
+                    "email": "naveen@gmail.com",
+                    "review": "Awesome "
+                },
+                {
+                    "name": "kishore",
+                    "email": "kishore@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "adithya",
+                    "email": "adithya@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "srujan",
+                    "email": "srujan@gmail.com",
+                    "review": "good Food"
+                },
+                {
+                    "name": "srujith",
+                    "email": "srujith@gmail.com",
+                    "review": "Best Place for biryani"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "resTitle": "Char cafe",
+            "info": "Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food",
+            "resImg": "https://byfood.b-cdn.net/api/public/assets/9433/content?optimizer=image",
+            "city": "banglore",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+                    "price": "300"
+                },
+                {
+                    "title": "pepper chicken",
+                    "img": "https://i.ytimg.com/vi/bqYkvC_SM6A/maxresdefault.jpg",
+                    "price": "250"
+                },
+                {
+                    "title": "Tandoori chicken",
+                    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
+                    "price": "280"
+                },
+                {
+                    "title": "Crispy prawns curry",
+                    "img": "https://c.ndtvimg.com/2020-01/131ns4qo_prawn_625x300_22_January_20.jpg",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "naveen",
+                    "email": "naveen@gmail.com",
+                    "review": "Awesome "
+                },
+                {
+                    "name": "kishore",
+                    "email": "kishore@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "adithya",
+                    "email": "adithya@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "srujan",
+                    "email": "srujan@gmail.com",
+                    "review": "good Food"
+                },
+                {
+                    "name": "srujith",
+                    "email": "srujith@gmail.com",
+                    "review": "Best Place for biryani"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "resTitle": "Eating Circles",
+            "info": "We serve delicious vegetarian food made using fresh, quality ingredients catering to a multitude of taste preferences, without burning a hole in your wallet! We’re big on flavour and uncompromising on service, so much so that our restaurants are reckoned to be amongst the best vegetarian restaurants in the country.Our sweets and snacks range from the melt-in-your-mouth Mysorepak from the south, the multi-variety Malaipeda of the North, the mouth-watering Badam Halwa of the East or the timeless dry fruits of the West. Our products are synonymous with traditional taste that you know and love while pioneering in the use of the latest techniques in manufacturing.",
+            "resImg": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dlmz1yxadswphbdd8vcu",
+            "city": "chennai",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/eqcbk0o45hksexqssaek",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/s2pzw7si28tmqukpscar",
+                    "price": "220"
+                },
+                {
+                    "title": "Chicken Lollipop",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/j01cuy4ckeccp8bcsxpg",
+                    "price": "104"
+                },
+                {
+                    "title": "Tandoori",
+                    "img": "https://aabsweets.com/assets/img/home-one/talented/4.jpg",
+                    "price": "170"
+                },
+                {
+                    "title": "Chicken 65",
+                    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vuorwsq537avpzgldqri",
+                    "price": "260"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "john",
+                    "email": "john@gmail.com",
+                    "review": "Good"
+                },
+                {
+                    "name": "shalini",
+                    "email": "shalini@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "Gomathi",
+                    "email": "gomathi@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "sujin",
+                    "email": "sujin@gmail.com",
+                    "review": "Awesome Food"
+                },
+                {
+                    "name": "Latha",
+                    "email": "latha@gmail.com",
+                    "review": "Best Place for food"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "resTitle": "MariGold Restaurant ",
+            "info": "Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food",
+            "resImg": "https://images.squarespace-cdn.com/content/v1/5548e842e4b0d188a9b3cf5b/1484830574661-I6B2RG2EMIUWP7A7J7YO/Marigold.jpg",
+            "city": "banglore",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+                    "price": "300"
+                },
+                {
+                    "title": "pepper chicken",
+                    "img": "https://i.ytimg.com/vi/bqYkvC_SM6A/maxresdefault.jpg",
+                    "price": "250"
+                },
+                {
+                    "title": "Tandoori chicken",
+                    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
+                    "price": "280"
+                },
+                {
+                    "title": "Crispy prawns curry",
+                    "img": "https://c.ndtvimg.com/2020-01/131ns4qo_prawn_625x300_22_January_20.jpg",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "naveen",
+                    "email": "naveen@gmail.com",
+                    "review": "Awesome "
+                },
+                {
+                    "name": "kishore",
+                    "email": "kishore@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "adithya",
+                    "email": "adithya@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "srujan",
+                    "email": "srujan@gmail.com",
+                    "review": "good Food"
+                },
+                {
+                    "name": "srujith",
+                    "email": "srujith@gmail.com",
+                    "review": "Best Place for biryani"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "resTitle": "Black pearl Koramangala",
+            "info": "Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food",
+            "resImg": "https://b.zmtcdn.com/data/pictures/2/54162/60a95e08f9b514d2b3afae3579f7caf1.jpg",
+            "city": "banglore",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+                    "price": "300"
+                },
+                {
+                    "title": "pepper chicken",
+                    "img": "https://i.ytimg.com/vi/bqYkvC_SM6A/maxresdefault.jpg",
+                    "price": "250"
+                },
+                {
+                    "title": "Tandoori chicken",
+                    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
+                    "price": "280"
+                },
+                {
+                    "title": "Crispy prawns curry",
+                    "img": "https://c.ndtvimg.com/2020-01/131ns4qo_prawn_625x300_22_January_20.jpg",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "naveen",
+                    "email": "naveen@gmail.com",
+                    "review": "Awesome "
+                },
+                {
+                    "name": "kishore",
+                    "email": "kishore@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "adithya",
+                    "email": "adithya@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "srujan",
+                    "email": "srujan@gmail.com",
+                    "review": "good Food"
+                },
+                {
+                    "name": "srujith",
+                    "email": "srujith@gmail.com",
+                    "review": "Best Place for biryani"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "resTitle": "Mangalore in banglore",
+            "info": "Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food Regional South Indian fare served in an elegant, wood-panelled setting with temple bell fixtures.Modern and homey restaurant serving a la carte and buffet continental, fusion and Indian food",
+            "resImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHb-vmNNA975iGI_EaNk-CbYXqdc4zlF4mA&usqp=CAU",
+            "city": "banglore",
+            "menu": [
+                {
+                    "title": "Mutton Briyani",
+                    "img": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+                    "price": "370"
+                },
+                {
+                    "title": "Chicken Briyani",
+                    "img": "https://glebekitchen.com/wp-content/uploads/2019/12/chickenbiryanibowltop.jpg",
+                    "price": "300"
+                },
+                {
+                    "title": "pepper chicken",
+                    "img": "https://i.ytimg.com/vi/bqYkvC_SM6A/maxresdefault.jpg",
+                    "price": "250"
+                },
+                {
+                    "title": "Tandoori chicken",
+                    "img": "https://www.cookingclassy.com/wp-content/uploads/2018/08/tandoori-chicken-11.jpg",
+                    "price": "280"
+                },
+                {
+                    "title": "Crispy prawns curry",
+                    "img": "https://c.ndtvimg.com/2020-01/131ns4qo_prawn_625x300_22_January_20.jpg",
+                    "price": "320"
+                }
+            ],
+            "reviews": [
+                {
+                    "name": "naveen",
+                    "email": "naveen@gmail.com",
+                    "review": "Awesome "
+                },
+                {
+                    "name": "kishore",
+                    "email": "kishore@gmail.com",
+                    "review": "Nice Food"
+                },
+                {
+                    "name": "adithya",
+                    "email": "adithya@gmail.com",
+                    "review": "Bad Experience"
+                },
+                {
+                    "name": "srujan",
+                    "email": "srujan@gmail.com",
+                    "review": "good Food"
+                },
+                {
+                    "name": "srujith",
+                    "email": "srujith@gmail.com",
+                    "review": "Best Place for biryani"
+                }
+            ]
         }
+
 
 
 
