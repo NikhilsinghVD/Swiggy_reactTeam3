@@ -26,9 +26,9 @@ function Home() {
         <Container>
           <FormGroup sx={{ width: 600 }}>
             <FormControl>
-              <InputLabel htmlFor="my-input">Reatuarent name</InputLabel>
+              <InputLabel htmlFor="my-input">Restaurent name</InputLabel>
               <Input id="my-input" aria-describedby="my-helper-text" />
-              <FormHelperText id="my-helper-text">Please Write Reatuarent name here</FormHelperText>
+              <FormHelperText id="my-helper-text">Please Write Restaurent name here</FormHelperText>
             </FormControl>
             <FormControl>
               <InputLabel htmlFor="my-input">City</InputLabel>
@@ -42,7 +42,7 @@ function Home() {
 
       <Box>
         <Container>
-          <Typography variant='h3' sx={{ color: "#f76f72" }}>Recomendations</Typography>
+          <Typography variant='h3' sx={{ color: "#f76f72" }}>Recommendations:</Typography>
           <Marquee play="true" loop={100} speed={30} gradientWidth={5}>
             {
               data.map((el) => {
@@ -57,12 +57,8 @@ function Home() {
                     <Typography gutterBottom variant="h5" component="div">
                       {el.resTitle}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {el.info}
-                    </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">Share</Button>
                     <Button size="small">Learn More</Button>
                   </CardActions>
                 </Card>
