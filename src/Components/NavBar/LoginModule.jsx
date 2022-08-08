@@ -81,12 +81,9 @@ headers :
                   }
                   label="Remember me"
                />
-<<<<<<< HEAD
               <Button  type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
               </form>
-=======
               <Button onClick={e => setOpen(false)} type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
->>>>>>> 8b564b7ede54a6a1369a16b92a6f50d862982a2a
               <Typography >
                    <Link to="" >
                       Forgot password ?
