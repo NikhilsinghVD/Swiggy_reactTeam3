@@ -6,31 +6,47 @@ import { Grid, Paper, Avatar, TextField} from '@mui/material';
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import axios from 'axios';
+import { useState } from 'react';
 function RegisterModule() {
-  const [inputs, setInputs] = React.useState([]);
-  const [uname, setuname] = React.useState();
-  const [email, setemail] = React.useState();
-  const [password, setpassword] = React.useState();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const paperStyle = { padding: 20, width: 300, margin: "0 auto" }
   const headerStyle = { margin: 0 }
   const avatarStyle = { backgroundColor: '#1bbd7e' }
+  const [user, setUser] = useState(
+    {
+      name:"",
+      email:"",
+      password:""
+    }
+  )
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let input ={
-        uname,
-        email,
-        password
-      }
-      setInputs([...inputs,input]);
-      setpassword('');
-      setuname('');
-      setemail('');
-      setOpen(false);
-
+  const handleChange = e => {
+    const {name, value}=e.target;
+    setUser({
+      ...user,[name]:value
+    })
+  }
+  
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const {name,email, password} = user;
+    console.log(user)
+    let config =
+    {
+  headers :
+  {
+    'Content-Type':'application/json'
+  }
+    };
+    const resp = await axios.post("http://localhost:9000/auth/register", user, config)
+    if(resp.data.status==200)
+    console.log("user added")
+    else
+    console.log(resp)
+  
   }
   return (
     <div>
@@ -51,14 +67,14 @@ function RegisterModule() {
                   <Typography variant='caption' gutterBottom>Please fill this form to create an account !</Typography>
               </Grid>
               <form onSubmit={handleSubmit}>
-                  <TextField fullWidth label='Name' placeholder="Enter your name" value={uname} 
-      name='name' onChange={(e)=>setuname(e.target.value)}/>
-                  <TextField fullWidth label='Email' placeholder="Enter your email" value={email} 
-       name='email' onChange={(e)=>setemail(e.target.value)}/>
-                  <TextField fullWidth label='Password' placeholder="Enter your password" value={password} 
-       name='password' onChange={(e)=>setpassword(e.target.value)}/>
-                  <TextField fullWidth label='Confirm Password' placeholder="Confirm your password" value={password} 
-   name='password' onChange={(e)=>setpassword(e.target.value)}/>
+                  <TextField fullWidth label='Name' placeholder="Enter your name"
+      name='name' value={user.name} onChange={handleChange}/>
+                  <TextField fullWidth label='Email' placeholder="Enter your email" 
+       name='email' value={user.email} onChange={handleChange}/>
+                  <TextField fullWidth label='Password' placeholder="Enter your password" 
+       name='password' value={user.password} onChange={handleChange}/>
+                  <TextField fullWidth label='Confirm Password' placeholder="Confirm your password" 
+   name='password' value={user.password} onChange={handleChange}/>
                   <FormControlLabel
                       control={<Checkbox name="checkedA" />}
                       label="I accept the terms and conditions."
