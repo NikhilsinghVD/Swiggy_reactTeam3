@@ -13,12 +13,10 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
-<<<<<<< HEAD
-=======
     "bootstrap": "^5.2.0",
     "fontawesome": "^5.6.3",
     "json-server": "^0.17.0",
->>>>>>> 8b564b7ede54a6a1369a16b92a6f50d862982a2a
+
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
