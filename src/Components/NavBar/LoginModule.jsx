@@ -41,7 +41,7 @@ const handleClose = () => setOpen(false);
                   }
                   label="Remember me"
                />
-              <Button onClick={handleClose} type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
+              <Button onClick={e => setOpen(false)} type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
               <Typography >
                    <Link to="" >
                       Forgot password ?
