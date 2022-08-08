@@ -73,13 +73,12 @@ function RegisterModule() {
        name='email' value={user.email} onChange={handleChange}/>
                   <TextField fullWidth label='Password' placeholder="Enter your password" 
        name='password' value={user.password} onChange={handleChange}/>
-                  <TextField fullWidth label='Confirm Password' placeholder="Confirm your password" 
-   name='password' value={user.password} onChange={handleChange}/>
+                 
                   <FormControlLabel
                       control={<Checkbox name="checkedA" />}
                       label="I accept the terms and conditions."
                   />
-                  <Button type='submit' variant='contained' color='primary'>Sign up</Button>
+                  <Button onClick={e => setOpen(false)} type='submit' variant='contained' color='primary'>Sign up</Button>
               </form>
           </Paper>
       </Grid>

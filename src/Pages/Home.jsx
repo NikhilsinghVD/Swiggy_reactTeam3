@@ -31,9 +31,9 @@ function Home() {
               <FormHelperText id="my-helper-text">Please Write Reatuarent name here</FormHelperText>
             </FormControl>
             <FormControl>
-              <InputLabel htmlFor="my-input">Address</InputLabel>
+              <InputLabel htmlFor="my-input">City</InputLabel>
               <Input id="my-input" aria-describedby="my-helper-text" />
-              <FormHelperText id="my-helper-text">Please Write Your address here</FormHelperText>
+              <FormHelperText id="my-helper-text">Please Write Your City here</FormHelperText>
             </FormControl>
             <Button size='medium' variant='contained'>Search</Button>
           </FormGroup>
