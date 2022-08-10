@@ -19,10 +19,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-//import InboxIcon from '@mui/icons-material/MoveToInbox';
 import Drawer from '@mui/material/Drawer';
-//import Button from '@mui/material/Button';
-//import { Link } from 'react-router-dom';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
@@ -34,6 +31,14 @@ import LogOutModule from './LogOutModule';
 import LoginModule from './LoginModule';
 import RegisterModule from './RegisterModule';
 import {Link} from 'react-router-dom';
+import Navbar from "react-bootstrap/Navbar";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import Table from "react-bootstrap/esm/Table";
+import { DLT } from '../../jayapal/redux/actions/action';
+
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -76,6 +81,39 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 function NavBar() {
+  const [price, setPrice] = useState(0);
+  // console.log(price);
+
+  const getdata = useSelector((state) => state.cartreducer.carts);
+  // console.log(getdata);
+
+  const dispatch = useDispatch();
+
+  const [anchor, setAnchor] = useState(null);
+  const open = Boolean(anchor);
+  const handleClick = (event) => {
+    setAnchor(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchor(null);
+  };
+
+  const dlt = (id) => {
+    dispatch(DLT(id));
+  };
+
+  const total = () => {
+    let price = 0;
+    getdata.map((ele, k) => {
+      price = ele.price * ele.qnty + price;
+    });
+    setPrice(price);
+  };
+
+  useEffect(() => {
+    total();
+  }, [total]);
+
   const Cart = <CartModule/>
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -140,7 +178,7 @@ function NavBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-       <MenuItem>
+      <MenuItem>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"
@@ -152,6 +190,9 @@ function NavBar() {
         </IconButton>
         <p>MyOrders</p>
       </MenuItem>
+
+      
+
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -269,15 +310,118 @@ function NavBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
+       
+          <Badge
+            badgeContent={getdata.length}
+            color="warning"
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            <AddShoppingCartIcon style={{ fontSize: "30px", marginTop:'10px', marginLeft:'40px' }} />
+          </Badge>
+         <Menu
+          id="basic-menu"
+          anchorEl={anchor}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "basic-button",
+          }}
+        >
+          {getdata.length ? (
+            <div
+              className="card_details"
+              style={{ width: "24rem", padding: 10 }}
             >
-              <Badge badgeContent={17} color="error">
-          <Link to="/cards"><ShoppingCartIcon /></Link> 
-              </Badge>
-            </IconButton>
+              <Table>
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Menu Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {getdata.map((e) => {
+                    return (
+                      <>
+                        <tr>
+                          <td>
+                            <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
+                              <img
+                                src={e.imgdata}
+                                style={{ width: "5rem", height: "5rem" }}
+                                alt=""
+                              />
+                            </NavLink>
+                          </td>
+                          <td>
+                            <p>{e.rname}</p>
+                            <p>Price : ₹{e.price}</p>
+                            <p>Quantity : {e.qnty}</p>
+                            <p
+                              style={{
+                                color: "red",
+                                fontSize: 20,
+                                cursor: "pointer",
+                              }}
+                              onClick={() => dlt(e.id)}
+                            >
+                              {/* <i className="fas fa-trash smalltrash"></i> */}
+                            </p>
+                          </td>
+
+                          <td
+                            className="mt-5"
+                            style={{
+                              color: "red",
+                              fontSize: 20,
+                              cursor: "pointer",
+                            }}
+                            onClick={() => dlt(e.id)}
+                          >
+                            <i
+                              className="fas fa-trash largetrash "
+                              style={{ color: "black" }}
+                            ></i>
+                          </td>
+                        </tr>
+                      </>
+                    );
+                  })}
+                  <p className="text-center">Total :₹ {price}</p>
+                </tbody>
+              </Table>
+            </div>
+          ) : (
+            <div
+              className="card_details d-flex justify-content-center align-items-center"
+              style={{ width: "24rem", padding: 10, position: "relative" }}
+            >
+              <i
+                className="fas fa-close smallclose"
+                onClick={handleClose}
+                style={{
+                  position: "absolute",
+                  top: 2,
+                  right: 20,
+                  fontSize: 23,
+                  cursor: "pointer",
+                }}
+              ></i>
+              <p style={{ fontSize: 22 }}>Your carts is empty</p>
+              <img
+                src="./cart.gif"
+                alt=""
+                className="emptycart_img"
+                style={{ width: "5rem", padding: 10 }}
+              />
+            </div>
+          )}
+        </Menu>
+
             <IconButton
               size="large"
               edge="end"
