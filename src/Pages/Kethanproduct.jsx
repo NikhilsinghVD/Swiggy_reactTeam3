@@ -8,7 +8,6 @@ import "./Productinfo.css";
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
-import Stack from '@mui/material/Stack';
 
 const Div = styled('div')(({ theme }) => ({
     ...theme.typography.button,
@@ -22,7 +21,7 @@ export default function Productinfo() {
             <Grid container spacing={2}>
                 <Grid item xs={1}>
                     <Button size="medium" >
-                        <div className='button'> <b> X </b></div>
+                        <div className='button'> <b>X </b></div>
                     </Button>
                 </Grid>
                 <Grid item xs={11}>
@@ -30,38 +29,44 @@ export default function Productinfo() {
                         <b>PRODUCT INFO</b>
                     </Typography>
                 </Grid>
-                <Grid item xs={6} md={6}>
-                    <CardMedia
-                        component="img"
-                        alt="BigCo Inc. logo"
-                        height={"100%"}
-                        width={'100%'}
-                        image="https://images.moneycontrol.com/static-mcnews/2021/10/Mirrors-play-a-standout-role-in-accentuating-the-expansive-feel-of-Klap-2.jpg?impolicy=website&width=1600&height=900"
+                <Grid item xs={12}>
+                <CardMedia
+                    component="img"
+                    alt="BigCo Inc. logo"
+                    height={"100%"}
+                    width={'100%'}
+                    image= "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&w=1000&q=80"
                     />
-                </Grid>
-                <Grid item xs={6} md={6}>
-                    <div style={{ display: "inline" }}>
-                        <Typography variant="body1" gutterBottom>
-                            Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot. It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
-                            It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
-                            <div />
-                            Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot. It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
-                            It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot. It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
-                        </Typography>
-                        <Button size="medium">
-                            -
-                        </Button>
-                        <p className='text'>1</p>
-                        <Button size="medium">
-                            +
-                        </Button>
-                        <p className='text'>$100</p>
-                    </div>
-
-                    <Button variant="contained" sx={{ ml: "279px" }}>Add to card</Button>
-
-                </Grid>
             </Grid>
+            <Grid item xs={12}>
+                <Typography variant="body1" gutterBottom>
+                    Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot. It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
+                    It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
+                </Typography>
+            </Grid>
+            <Grid item xs={12}>
+                <Typography variant="body1" gutterBottom>
+                    Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot. It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
+                    It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations.
+
+                </Typography>
+            </Grid>
+
+            <Grid item xs={8} >
+                <Button size="medium">
+                    <div> <Typography variant="h4" align='center' component="h2">
+                        <b>  -</b>
+                    </Typography></div>
+                </Button>
+                <p className='text'>1</p>
+                <Button size="medium">
+                    <div className='button'><Typography variant="h4" align='center' component="h2">
+                        <b> +</b>
+                    </Typography></div>
+                </Button>
+                <p className='text1'>$100</p>
+            </Grid>
+        </Grid>
         </Box>
     );
 }
