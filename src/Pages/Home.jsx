@@ -4,6 +4,7 @@ import { Button, Card, CardActions, CardContent, CardMedia, Container, FormContr
 import Corousel from '../Components/Corousel';
 import Marquee from "react-fast-marquee";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -32,10 +33,14 @@ function Home() {
             </FormControl>
             <FormControl>
               <InputLabel htmlFor="my-input">City</InputLabel>
-              <Input id="my-input" aria-describedby="my-helper-text" />
+              <Input id="my-input" aria-describedby="my-helper-text"/>
               <FormHelperText id="my-helper-text">Please Write Your City here</FormHelperText>
             </FormControl>
-            <Button size='medium' variant='contained'>Search</Button>
+            <Link to='/product'>
+            <Button size='medium' variant='contained'>
+           Search
+              </Button>
+              </Link>
           </FormGroup>
         </Container>
       </Box>

@@ -55,7 +55,7 @@ useEffect(()=>{
   return (
     <div>
       <Paper elevation={4} style={{ height: "100px" }}>
-        <Typography variant='h4' style={{ textAlign: "center" }}>City</Typography>
+        <Typography variant='h4' style={{ textAlign: "center" }}>city</Typography>
       </Paper>
       <Grid container spacing={3} style={{ marginTop: "20px" }} >
         {
