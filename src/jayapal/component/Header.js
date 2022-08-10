@@ -78,11 +78,6 @@ const Header = () => {
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
-            <h5
-              style={{ color: "white", paddingTop: "5px", cursor: "pointer" }}
-            >
-              AddCart
-            </h5>
             <AddShoppingCartIcon style={{ fontSize: "40px", color: "white" }} />
           </Badge>
         </Container>
