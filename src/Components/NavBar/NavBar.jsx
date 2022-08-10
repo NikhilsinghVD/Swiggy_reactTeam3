@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React from 'react'
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,6 +12,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import MailIcon from '@mui/icons-material/Mail';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import List from '@mui/material/List';
@@ -20,7 +21,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 //import InboxIcon from '@mui/icons-material/MoveToInbox';
-import Drawer from '@mui/material/Drawer';
+import Drawer from '@mui/material/Drawer'
 //import Button from '@mui/material/Button';
 //import { Link } from 'react-router-dom';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
@@ -34,6 +35,23 @@ import LogOutModule from './LogOutModule';
 import LoginModule from './LoginModule';
 import RegisterModule from './RegisterModule';
 import {Link} from 'react-router-dom';
+
+
+import { useEffect, useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+// import Badge from "@mui/material/Badge";
+// import Nav from "react-bootstrap/Nav";
+// import Menu from "@mui/material/Menu";
+// import MenuItem from "@mui/material/MenuItem";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import Table from "react-bootstrap/esm/Table";
+// import { DLT } from "../redux/actions/action";
+import { DLT } from '../../jayapal/redux/actions/action';
+
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -76,8 +94,41 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 function NavBar() {
+  const [price, setPrice] = useState(0);
+  // console.log(price);
+
+  const getdata = useSelector((state) => state.cartreducer.carts);
+  // console.log(getdata);
+
+  const dispatch = useDispatch();
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const dlt = (id) => {
+    dispatch(DLT(id));
+  };
+
+  const total = () => {
+    let price = 0;
+    getdata.map((ele, k) => {
+      price = ele.price * ele.qnty + price;
+    });
+    setPrice(price);
+  };
+
+  useEffect(() => {
+    total();
+  }, [total]);
+
   const Cart = <CartModule/>
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
@@ -140,7 +191,7 @@ function NavBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-       <MenuItem>
+      <MenuItem>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"
@@ -152,6 +203,19 @@ function NavBar() {
         </IconButton>
         <p>MyOrders</p>
       </MenuItem>
+
+      
+{/* <Badge
+            badgeContent={getdata.length}
+            color="warning"
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            <AddShoppingCartIcon style={{ fontSize: "40px", color: "white" }} />
+          </Badge> */}
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -171,7 +235,7 @@ function NavBar() {
 
 
   return (
-    <Box sx={{ flexGrow: 1 } }>
+    <Box sx={{ flexGrow: 1 }}>
       <Drawer open={opens} onClose={()=>setOpens(false)}>
       <Box
       sx={{ width: 250 , backgroundColor:"#f76f72"}}
@@ -229,7 +293,7 @@ function NavBar() {
       </List>
     </Box>
       </Drawer>
-      <AppBar position="fixed" sx={{backgroundColor:"#f76f72"}}>
+      <AppBar position="static" sx={{backgroundColor:"#f76f72"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -269,7 +333,7 @@ function NavBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
@@ -277,7 +341,120 @@ function NavBar() {
               <Badge badgeContent={17} color="error">
           <Link to="/cards"><ShoppingCartIcon /></Link> 
               </Badge>
-            </IconButton>
+            </IconButton> */}
+<Badge
+            badgeContent={getdata.length}
+            color="warning"
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          >
+            <AddShoppingCartIcon style={{ fontSize: "40px", color: "white" }} />
+          </Badge>
+      
+
+        <Menu
+          id="basic-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "basic-button",
+          }}
+        >
+          {getdata.length ? (
+            <div
+              className="card_details"
+              style={{ width: "24rem", padding: 10 }}
+            >
+              <Table>
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Menu Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {getdata.map((e) => {
+                    return (
+                      <>
+                        <tr>
+                          <td>
+                            <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
+                              <img
+                                src={e.imgdata}
+                                style={{ width: "5rem", height: "5rem" }}
+                                alt=""
+                              />
+                            </NavLink>
+                          </td>
+                          <td>
+                            <p>{e.rname}</p>
+                            <p>Price : ₹{e.price}</p>
+                            <p>Quantity : {e.qnty}</p>
+                            <p
+                              style={{
+                                color: "red",
+                                fontSize: 20,
+                                cursor: "pointer",
+                              }}
+                              onClick={() => dlt(e.id)}
+                            >
+                              {/* <i className="fas fa-trash smalltrash"></i> */}
+                            </p>
+                          </td>
+
+                          <td
+                            className="mt-5"
+                            style={{
+                              color: "red",
+                              fontSize: 20,
+                              cursor: "pointer",
+                            }}
+                            onClick={() => dlt(e.id)}
+                          >
+                            <i
+                              className="fas fa-trash largetrash "
+                              style={{ color: "black" }}
+                            ></i>
+                          </td>
+                        </tr>
+                      </>
+                    );
+                  })}
+                  <p className="text-center">Total :₹ {price}</p>
+                </tbody>
+              </Table>
+            </div>
+          ) : (
+            <div
+              className="card_details d-flex justify-content-center align-items-center"
+              style={{ width: "24rem", padding: 10, position: "relative" }}
+            >
+              <i
+                className="fas fa-close smallclose"
+                onClick={handleClose}
+                style={{
+                  position: "absolute",
+                  top: 2,
+                  right: 20,
+                  fontSize: 23,
+                  cursor: "pointer",
+                }}
+              ></i>
+              <p style={{ fontSize: 22 }}>Your carts is empty</p>
+              <img
+                src="./cart.gif"
+                alt=""
+                className="emptycart_img"
+                style={{ width: "5rem", padding: 10 }}
+              />
+            </div>
+          )}
+        </Menu>
+
             <IconButton
               size="large"
               edge="end"
