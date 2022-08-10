@@ -26,11 +26,11 @@ function Home() {
       <Box sx={{ mr: 2, backgroundImage: "https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" }}>
         <Container>
           <FormGroup sx={{ width: 600 }}>
-            <FormControl>
+            {/* <FormControl>
               <InputLabel htmlFor="my-input">Restaurent name</InputLabel>
               <Input id="my-input" aria-describedby="my-helper-text" />
               <FormHelperText id="my-helper-text">Please Write Restaurent name here</FormHelperText>
-            </FormControl>
+            </FormControl> */}
             <FormControl>
               <InputLabel htmlFor="my-input">City</InputLabel>
               <Input id="my-input" aria-describedby="my-helper-text"/>
@@ -62,10 +62,9 @@ function Home() {
                     <Typography gutterBottom variant="h5" component="div">
                       {el.resTitle}
                     </Typography>
+                    
                   </CardContent>
-                  <CardActions>
-                    <Button size="small">Learn More</Button>
-                  </CardActions>
+                  
                 </Card>
 
               })

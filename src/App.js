@@ -28,18 +28,15 @@ const App=()=> {
       <Route path="/settings" element={<Setting/>}/>
       <Route path="/delivery" element={<Delivery/>}/>
       <Route path="/CustomerSupport" element={<CustomerSupport/>}/>
-      <Route path="/cartModule" element={<CartModule/>}/>
-       
+      <Route path="/cartModule" element={<CartModule/>}/> 
       <Route path="/productlist" element={<Protected Component={Product}/>}/>
       <Route path="/login" element={<LoginModule/>}/>
-
       <Route path="/product" element={<Product/>}/>
       <Route path="/Kethanproduct" element={<Kethanproduct/>}/>
       {/* Jaypal */}
       <Route path='/cards' element={<Cards />} />
      <Route path='/cart/:id' element={<CardsDetails />} />
      <Route path='/header' element={<Header/>} />
-
      </Routes>
     </>
   );
