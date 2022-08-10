@@ -10,7 +10,7 @@ function Home() {
   const [data, setdata] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:4001/restuarantsList")
+    axios.get(" http://localhost:4000/restuarantsList")
       .then(response => {
         console.log("res", response)
         setdata(response.data)

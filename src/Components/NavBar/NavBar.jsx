@@ -320,7 +320,7 @@ function NavBar() {
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
-            <AddShoppingCartIcon style={{ fontSize: "40px", color: "white" }} />
+            <AddShoppingCartIcon style={{ fontSize: "30px", marginTop:'10px', marginLeft:'40px' }} />
           </Badge>
          <Menu
           id="basic-menu"
