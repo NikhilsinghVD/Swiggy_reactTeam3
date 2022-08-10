@@ -140,7 +140,7 @@ function NavBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {/* <MenuItem>
+       <MenuItem>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"

@@ -4,13 +4,14 @@ import { Button, Card, CardActions, CardContent, CardMedia, Container, FormContr
 import Corousel from '../Components/Corousel';
 import Marquee from "react-fast-marquee";
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 function Home() {
 
   const [data, setdata] = useState([])
 
   useEffect(() => {
-    axios.get(" http://localhost:4000/restuarantsList")
+    axios.get("http://localhost:4001/restuarantsList")
       .then(response => {
         console.log("res", response)
         setdata(response.data)
@@ -35,7 +36,9 @@ function Home() {
               <Input id="my-input" aria-describedby="my-helper-text" />
               <FormHelperText id="my-helper-text">Please Write Your City here</FormHelperText>
             </FormControl>
+            <Link to="/product">
             <Button size='medium' variant='contained'>Search</Button>
+            </Link>
           </FormGroup>
         </Container>
       </Box>
@@ -57,7 +60,7 @@ function Home() {
                     <Typography gutterBottom variant="h5" component="div">
                       {el.resTitle}
                     </Typography>
-                    
+
                   </CardContent>
                   
                 </Card>
