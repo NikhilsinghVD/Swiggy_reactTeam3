@@ -27,7 +27,7 @@ export default function Product() {
       {/* <Paper elevation={4} style={{ height: "100px" }}>
         <Typography variant='h4' style={{ textAlign: "center" }}>City</Typography>
       </Paper> */}
-      <Grid container spacing={3} style={{ marginTop: "60px" }}>
+      <Grid container spacing={3} style={{ marginTop: "60px" }} >
         {
           data.map((data) => (
             <Grid item xs={12} sm={6} lg={3}>

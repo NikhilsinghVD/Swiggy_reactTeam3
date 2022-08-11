@@ -219,7 +219,7 @@ function NavBar() {
       role="presentation"
     >
       <List sx={{backgroundColor:"#f76f72"}}>
-          <ListItem disablePadding>
+          {/* <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                  <AccountBalanceWalletIcon />
@@ -242,7 +242,7 @@ function NavBar() {
               </ListItemIcon>
               <ListItemText onClick={()=>setOpens(false)}><Link to='/receipt'>Reciept</Link></ListItemText>           
             </ListItemButton>
-            </ListItem>
+            </ListItem> */}
             <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -251,14 +251,14 @@ function NavBar() {
               <ListItemText onClick={()=>setOpens(false)}><Link to='/CustomerSupport'>Customer Support</Link></ListItemText>           
             </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
+            {/* <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                  <SettingsIcon />
               </ListItemIcon>
               <ListItemText onClick={()=>setOpens(false)}><Link to='/settings'>Setting</Link></ListItemText>           
             </ListItemButton>
-            </ListItem>
+            </ListItem> */}
             <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
