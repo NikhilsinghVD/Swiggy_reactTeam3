@@ -3,6 +3,7 @@ import Table from "react-bootstrap/Table";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { DLT, ADD, REMOVE } from "../redux/actions/action";
+import { Button } from "@mui/material";
 
 const CardsDetails = () => {
   const [data, setData] = useState([]);
@@ -77,6 +78,7 @@ const CardsDetails = () => {
                             {" "}
                             <strong>Total</strong> :₹ {ele.price * ele.qnty}
                           </p>
+                        
                           <div
                             className="mt-5 d-flex justify-content-between align-items-center"
                             style={{
