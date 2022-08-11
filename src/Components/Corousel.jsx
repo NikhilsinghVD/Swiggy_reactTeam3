@@ -47,8 +47,9 @@ function Corousel(){
       setActiveStep(step);
     };
     return(
-        <Box sx={{ maxWidth: "auto", flexGrow: 1 }}>
-        <AutoPlaySwipeableViews
+        <Box sx={{ maxWidth: "auto", flexGrow: 1 ,  mt: "80px"}} 
+        >
+        <AutoPlaySwipeableViews 
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={activeStep}
           onChangeIndex={handleStepChange}

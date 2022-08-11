@@ -11,7 +11,7 @@ import CartModule from './Components/NavBar/CartModule';
 import Product from './Pages/Product';
 import LoginModule from './Components/NavBar/LoginModule'
 import Protected from './Components/Protected';
-import Kethanproduct from './Pages/Kethanproduct';
+import Productinfo from './Pages/Productinfo';
 import Header from './jayapal/component/Header'
 import CardsDetails from './jayapal/component/CardsDetails';
 import Cards from './jayapal/component/Cards';
@@ -32,7 +32,7 @@ const App=()=> {
       <Route path="/productlist" element={<Protected Component={Product}/>}/>
       <Route path="/login" element={<LoginModule/>}/>
       <Route path="/product" element={<Product/>}/>
-      <Route path="/Kethanproduct" element={<Kethanproduct/>}/>
+      <Route path="/Productinfo" element={<Productinfo/>}/>
       {/* Jaypal */}
       <Route path='/cards' element={<Cards />} />
      <Route path='/cart/:id' element={<CardsDetails />} />
