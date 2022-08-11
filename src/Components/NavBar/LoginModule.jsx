@@ -46,6 +46,8 @@ headers :
   };
   const resp = await axios.post("http://localhost:9000/auth/login", user, config)
   console.log(resp.data);
+  setOpen(false);
+  setUser("")
   let token= resp.data;
   if(token!=null) 
   localStorage.setItem("token", token.access_token)
@@ -81,12 +83,14 @@ headers :
                   }
                   label="Remember me"
                />
-              <Button onClick={e => setOpen(false)}  type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
+              {/* <Button onClick={e => setOpen(false)}  type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button> */}
+              <Button  type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>
+
               </form>
               <Typography >
-                   <Link to="" >
+                   
                       Forgot password ?
-              </Link>
+              
               </Typography>
           </Paper>
       </Grid>

@@ -18,7 +18,11 @@ const style = {
 function LogOutModule() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    alert("logout Successfully")
+    setOpen(false)
+
+  };
   return (
     <div>
       <Button onClick={handleOpen}>LogOut</Button>

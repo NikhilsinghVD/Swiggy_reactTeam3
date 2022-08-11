@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect, useState } from "react";
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,7 +12,6 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import List from '@mui/material/List';
@@ -20,10 +19,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-//import InboxIcon from '@mui/icons-material/MoveToInbox';
-import Drawer from '@mui/material/Drawer'
-//import Button from '@mui/material/Button';
-//import { Link } from 'react-router-dom';
+import Drawer from '@mui/material/Drawer';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
@@ -35,20 +31,11 @@ import LogOutModule from './LogOutModule';
 import LoginModule from './LoginModule';
 import RegisterModule from './RegisterModule';
 import {Link} from 'react-router-dom';
-
-
-import { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-// import Badge from "@mui/material/Badge";
-// import Nav from "react-bootstrap/Nav";
-// import Menu from "@mui/material/Menu";
-// import MenuItem from "@mui/material/MenuItem";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "react-bootstrap/esm/Table";
-// import { DLT } from "../redux/actions/action";
 import { DLT } from '../../jayapal/redux/actions/action';
 
 
@@ -102,13 +89,13 @@ function NavBar() {
 
   const dispatch = useDispatch();
 
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
+  const [anchor, setAnchor] = useState(null);
+  const open = Boolean(anchor);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchor(event.currentTarget);
   };
   const handleClose = () => {
-    setAnchorEl(null);
+    setAnchor(null);
   };
 
   const dlt = (id) => {
@@ -128,7 +115,7 @@ function NavBar() {
   }, [total]);
 
   const Cart = <CartModule/>
-  // const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
@@ -205,17 +192,7 @@ function NavBar() {
       </MenuItem>
 
       
-{/* <Badge
-            badgeContent={getdata.length}
-            color="warning"
-            id="basic-button"
-            aria-controls={open ? "basic-menu" : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? "true" : undefined}
-            onClick={handleClick}
-          >
-            <AddShoppingCartIcon style={{ fontSize: "40px", color: "white" }} />
-          </Badge> */}
+
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -235,7 +212,7 @@ function NavBar() {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 } }>
       <Drawer open={opens} onClose={()=>setOpens(false)}>
       <Box
       sx={{ width: 250 , backgroundColor:"#f76f72"}}
@@ -293,7 +270,7 @@ function NavBar() {
       </List>
     </Box>
       </Drawer>
-      <AppBar position="static" sx={{backgroundColor:"#f76f72"}}>
+      <AppBar position="fixed" sx={{backgroundColor:"#f76f72"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -333,16 +310,8 @@ function NavBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            {/* <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
-          <Link to="/cards"><ShoppingCartIcon /></Link> 
-              </Badge>
-            </IconButton> */}
-<Badge
+       
+          <Badge
             badgeContent={getdata.length}
             color="warning"
             id="basic-button"
@@ -351,13 +320,11 @@ function NavBar() {
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
           >
-            <AddShoppingCartIcon style={{ fontSize: "40px", color: "white" }} />
+            <AddShoppingCartIcon style={{ fontSize: "30px", marginTop:'10px', marginLeft:'40px' }} />
           </Badge>
-      
-
-        <Menu
+         <Menu
           id="basic-menu"
-          anchorEl={anchorEl}
+          anchorEl={anchor}
           open={open}
           onClose={handleClose}
           MenuListProps={{
@@ -464,7 +431,7 @@ function NavBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircle  />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
