@@ -219,15 +219,15 @@ function NavBar() {
       role="presentation"
     >
       <List sx={{backgroundColor:"#f76f72"}}>
-          {/* <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                 <AccountBalanceWalletIcon />
-              </ListItemIcon>
-              <ListItemText onClick={()=>setOpens(false)}><Link to='/mywallet'>My Wallet</Link></ListItemText>           
-            </ListItemButton>
+          <ListItem disablePadding>
+            {/* <ListItemButton> */}
+              {/* <ListItemIcon> */}
+                 {/* <AccountBalanceWalletIcon /> */}
+              {/* </ListItemIcon> */}
+              {/* <ListItemText onClick={()=>setOpens(false)}><Link to='/mywallet'>My Wallet</Link></ListItemText>            */}
+            {/* </ListItemButton> */}
             </ListItem>
-            <ListItem disablePadding>
+            {/* <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
                  <DeliveryDiningIcon />
@@ -297,7 +297,7 @@ function NavBar() {
             sx={{ display: { xs: 'none', sm: 'block' } }}
             style={{marginLeft:'10px'}}
           > 
-            <Link to='/cards'>MenuList</Link>
+            <Link to='/cards'>  </Link>
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -431,7 +431,7 @@ function NavBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle  />
+              <AccountCircle />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>

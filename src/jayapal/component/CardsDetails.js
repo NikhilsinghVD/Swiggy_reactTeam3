@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { DLT, ADD, REMOVE } from "../redux/actions/action";
 import { Button } from "@mui/material";
+import CardMedia from '@mui/material/CardMedia';
 
 const CardsDetails = () => {
   const [data, setData] = useState([]);
@@ -91,7 +92,7 @@ const CardsDetails = () => {
                             <span
                               style={{ fontSize: 24 }}
                               onClick={
-                                ele.qnty <= 1
+                                ele.qnty <= 2
                                   ? () => dlt(ele.id)
                                   : () => remove(ele)
                               }
@@ -137,6 +138,8 @@ const CardsDetails = () => {
                                   cursor: "pointer",
                                 }}
                               ></i>{" "}
+                            
+
                             </span>
                           </p>
                         </td>
